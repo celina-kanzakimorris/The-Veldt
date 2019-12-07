@@ -5,6 +5,9 @@ body{
 	background-color:#fcfcfc;
 	margin:0;
 	padding:0;
+
+	background-image: url("../crossword/crossword.png");
+	background-repeat: repeat;
 }
 
 h1{
@@ -32,6 +35,11 @@ p{
 	width: 10%;
 }
 
+
+.logoabout #active-btn{
+	padding-bottom: 0px;
+}
+
 #hiddenbox{
 	margin: 30% 0 0 80%;
 	opacity: 0;
@@ -53,17 +61,22 @@ p{
 
 .grid-parent{
 	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.about-grid-parent{
+	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 }
 
-.item-1{
+.about-grid-parent .item-1{
 	grid-row: 1/ span 1;
 	grid-column: 1/ span 2;
 	padding: 50px 100px;
 }
 
-.item-2{
+.about-grid-parent .item-2{
 	grid-row: 1/ span 1;
 	grid-column: 3/ span 1;
 }
